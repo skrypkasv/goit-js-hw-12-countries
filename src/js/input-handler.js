@@ -1,14 +1,13 @@
-import { fetchData } from './fetch';
+import fetchCountries from './fetchCountries';
 import { renderMarkup, clearMarkup } from './render-markup';
-import { throwError } from './throw-error';
+import throwError from './throw-error';
 
-export function onInputHandler(e) {
+export default function onInputHandler(e) {
   e.preventDefault();
-
   const searchQuery = e.target.value.trim();
 
   if (searchQuery.length > 0) {
-    fetchData(searchQuery)
+    fetchCountries(searchQuery)
       .then(renderMarkup)
       .catch(err => {
         throwError(err);

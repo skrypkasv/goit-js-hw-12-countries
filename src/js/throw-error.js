@@ -2,7 +2,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 import { error } from '@pnotify/core';
 
-export function throwError(message) {
+export default function throwError(message) {
   error({
     text: message,
     type: 'info',

@@ -1,6 +1,6 @@
 import countryCardTpl from '../templates/country-card.hbs';
 import listOfContries from '../templates/country-list.hbs';
-import { throwError } from './throw-error';
+import throwError from './throw-error';
 
 const cardContainer = document.querySelector('.js-card-container');
 const err = 'Too many matches found. Please specify your request!';

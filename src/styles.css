@@ -33,3 +33,7 @@ body {
 .card-value {
   font-weight: normal;
 }
+
+.card-img-flag {
+  margin-top: 10px;
+}
