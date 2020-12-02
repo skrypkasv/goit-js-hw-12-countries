@@ -1,6 +1,6 @@
-import countryCardTpl from '../templates/country-card.hbs';
-import listOfContries from '../templates/country-list.hbs';
-import throwError from './throw-error';
+import countryCardTpl from '../templates/country_card.hbs';
+import listOfContriesTpl from '../templates/country_list.hbs';
+import throwError from './throw_error';
 
 const cardContainer = document.querySelector('.js-card-container');
 const err = 'Too many matches found. Please specify your request!';
@@ -17,7 +17,7 @@ function renderCountryCard(country) {
 }
 
 function renderListOfCountries(countries) {
-  const markup = listOfContries(countries);
+  const markup = listOfContriesTpl(countries);
   cardContainer.innerHTML = markup;
 }
 

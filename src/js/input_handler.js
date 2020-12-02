@@ -1,6 +1,6 @@
-import fetchCountries from './fetchCountries';
-import { renderMarkup, clearMarkup } from './render-markup';
-import throwError from './throw-error';
+import fetchCountries from './fetch_countries';
+import { renderMarkup, clearMarkup } from './markup_render';
+import throwError from './throw_error';
 
 export default function onInputHandler(e) {
   e.preventDefault();
